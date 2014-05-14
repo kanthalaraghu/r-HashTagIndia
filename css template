@@ -1,0 +1,348 @@
+/* HashtagIndia Stylesheet (c) 2014, Kanthala Raghu */
+
+/*Underlying is the basic css of [r/hashtagindia](http://reddit.com/r/hashtagindia)*/
+
+body {
+    /*background: url(%%image%%);*/
+    position: relative;
+    background-position: top bottom;
+    background-repeat: no-repeat;
+}
+.sr-bar .separator {
+    color : #5522A1;
+}
+#header {
+    border-bottom-color : #872287;
+    background-color : #9AE4E8;
+}
+#sr-header-area {
+    border-bottom-color : #872287;
+    background-color : #9AE4E8;
+}
+
+/* Hide arrows for some people */
+body:not(.subscriber) .arrow {
+    visibility: hidden !important;
+}
+/* Change 'readers' box value */
+div.titlebox span.word {
+    display:none;
+}
+div.titlebox span.number:after {
+    content: " #Indians";
+}
+/* Change 'users here now' box value */
+.users-online .word {
+    display:none;
+}
+.users-online .word, .users-online .number:after {
+    content: " Visitors" !important;
+}
+/* Upvote arrow */
+.arrow.up {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #bdbdbd;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+.arrow.up:after {
+    content:"";
+    position:relative;
+    top:7px;
+    left:-3px;
+    width:5px;
+    height:6px;
+    background: #bdbdbd;
+    background-image: -webkit-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -o-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background: linear-gradient(to bottom, #bdbdbd, #dcdcdc);
+    display:block;
+}
+.arrow.upmod {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #2585A8;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+.arrow.upmod:after {
+    content:"";
+    position:relative;
+    top:7px;
+    left:-3px;
+    width:5px;
+    height:6px;
+    background: #2585A8;
+    background-image: -webkit-linear-gradient(top, #2585A8, #72D2F5);
+    background-image: -moz-linear-gradient(top, #2585A8, #72D2F5);
+    background-image: -o-linear-gradient(top, #2585A8, #72D2F5);
+    background-image: -ms-linear-gradient(top, #2585A8, #72D2F5);
+    background-image: linear-gradient(to bottom, #2585A8, #72D2F5);
+    display:block;
+}
+/* Downvote arrow */
+.arrow.down {
+    width: 0px;
+    height: 0;
+    margin-top:8px;
+    background-image: none;
+    border-top: 8px solid #BDBDBD;
+    border-left: 8px solid #FFF;
+    border-left-color: transparent;
+    border-right: 8px solid #FFF;
+    border-right-color: transparent;
+}
+.arrow.down:after {
+    content: "";
+    position: relative;
+    bottom: 13px;
+    left: -3px;
+    width: 5px;
+    height: 6px;
+    background: #BDBDBD;
+    background-image: -webkit-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -moz-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -o-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -ms-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: linear-gradient(to bottom, #DCDCDC, #BDBDBD);
+    display: block;}
+.arrow.downmod {
+    width: 0px;
+    height: 0;
+    margin-top: 8px;
+    background-image: none;
+    border-top: 8px solid #9AE4E8;
+    border-left: 8px solid #FFF;
+    border-left-color: transparent;
+    border-right: 8px solid #FFF;
+    border-right-color: transparent;
+}
+.arrow.downmod:after {
+    content: "";
+    position: relative;
+    bottom: 13px;
+    left: -3px;
+    width: 5px;
+    height: 6px;
+    background: #9494FF;
+    background-image: -webkit-linear-gradient(top, #9AE4E8, #9AE4E8);
+    background-image: -moz-linear-gradient(top, #9AE4E8, #9AE4E8);
+    background-image: -o-linear-gradient(top, #9AE4E8, #9AE4E8);
+    background-image: -ms-linear-gradient(top, #9AE4E8, #9AE4E8);
+    background-image: linear-gradient(to bottom, #9AE4E8, #9AE4E8);
+    display: block;
+}
+
+/*If you want to categorize your Subreddit, this will be useful. relpace news, technology, politics with your desired categories*/
+
+.linkflair-News .linkflairlabel {
+    background-color: #9AE4E8;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-Technology .linkflairlabel {
+    background-color: #9AE4E8;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-Politics .linkflairlabel {
+    background-color: #9AE4E8;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-Sports .linkflairlabel {
+    background-color: #9AE4E8;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-googlenews .linkflairlabel {
+    background-color: #d34836;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-googlepolitics .linkflairlabel {
+    background-color: #d34836;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-googletechnology .linkflairlabel {
+    background-color: #d34836;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+.linkflair-googlesports .linkflairlabel {
+    background-color: #d34836;
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;}
+
+/*Announcement Bar on top*/
+div.content {
+/*This lowers the links to create space*/
+margin-top:50px;
+}
+.titlebox form {
+/*Hack to enable repositioning of child elements*/
+position: static
+}
+.side h3:nth-of-type(1) {
+/*this code positions the sticky*/
+position:absolute;
+display: block;
+top:56px;
+left:65px;
+/*this code styles the sticky*/
+background-color: #F2F2F2;
+color: #555555;
+text-align: left;
+margin: 15px;
+border-radius: 8px;
+width: 50%;
+padding: 7px 0px 7px 40px;
+/*this code creates the image*/
+background-image: url(%%announceicon%%);
+background-repeat: no-repeat;
+background-position:left;
+}
+
+/*sticky menu bar*/
+/*moves links down to make space*/
+div.content {
+margin-top: 50px;
+}
+/*hack to enable positioning of child elements*/
+.titlebox form {
+position: static
+}
+/*turns top quote in sidebar into menu container*/
+.titlebox blockquote:first-child {
+border-left: none;
+position: absolute;
+z-index: 10;
+top: 70px;
+left: 40px
+}
+/*turns first paragraph into menu title*/
+.titlebox blockquote:first-child p:first-child {
+margin-top: 0px;
+padding: 5px;
+float: left;
+font-size: 12pt;
+background:#eff7ff;
+border: 1px solid #cee3f8;
+font-weight:bold;
+color:#555;
+cursor:default;
+}
+/*turns the lists into menus*/
+.titlebox blockquote ul {
+float: left;
+padding: 1px;
+background: #eff7ff;
+border: 1px solid #cee3f8;
+margin:0px;
+}
+/*hide and styles lists*/
+.titlebox blockquote ul li {
+display: none;
+padding:2px;
+text-align:center;
+}
+/*makes whole list item selectable*/
+.titlebox blockquote li a {
+display:block;
+}
+/*shows menu on hover*/
+.titlebox blockquote ul li:first-child, .titlebox blockquote ul:hover li {
+display: block
+}
+/*turns top list item into section header*/
+.titlebox blockquote li:first-child {
+font-size: 12pt;
+padding: 4px;
+cursor:default;
+}
+/*styling menu items*/
+.titlebox blockquote:first-child ul li:hover {
+background:#ffffff;
+}
+.titlebox blockquote li a:hover {
+color:orangered;
+}
+/*custom size for menu sections*/
+.titlebox blockquote ul:nth-of-type(1) {width:100px;}
+.titlebox blockquote ul:nth-of-type(2) {width:100px;} 
+
+/*Twitter Feed Graphic*/
+.side a[href="http://twitter.com/kanthalaraghu"]:after {
+width: 128px;
+height: 128px;
+content: "";
+background-image: url(%%twitter%%);
+display: inline-block;
+position:relative;
+}
+
+/*Sidebar Image*/
+.side a[href="http://reddit.com/r/hashtagindia"]:after {
+width: 300px;
+height: 300px;
+content: "";
+background-image: url(%%sidebar%%);
+display: inline-block;
+position:relative;
+}
+
+html:lang(ne) .link:not(.linkflair-News) {
+    display: none    }
+
+html:lang(tn) .link:not(.linkflair-technology) {
+    display: none    }
+
+html:lang(po) .link:not(.linkflair-Politics) {
+    display: none    }
+
+html:lang(sp) .link:not(.linkflair-Sports) {
+    display: none    }
